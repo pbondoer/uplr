@@ -13,6 +13,14 @@ node server
 You will also need a reverse proxy such as `nginx` to handle HTTPS and file
 delivery. A sample configuration is included in this repository.
 
+## Usage
+
+To upload:
+
+```
+curl -H "x-uplr: API_KEY" --data-binary @file.png https://uplr.it/
+```
+
 ## Configuration
 
 By default, all files are saved in the `img` directory.
