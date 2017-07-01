@@ -61,7 +61,7 @@ http.createServer(function(request, response) {
 		data = Buffer.concat(data);
 
 		// Generate a valid ID
-		var id = '';
+		var id = getId(config.id_size) + '.png';
 		while (fs.existsSync(config.path + id))
 		{
 			id = getId(config.id_size) + '.png';
@@ -78,6 +78,8 @@ http.createServer(function(request, response) {
 
 			// Return the URL
 			var url = config.prefix + id;
+
+			console.log('-> ' + url);
 
 			response.writeHead(CREATED, headers);
 			response.end(url);

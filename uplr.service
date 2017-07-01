@@ -4,11 +4,11 @@ Description=uplr service
 [Service]
 ExecStart=/usr/bin/node /www/uplr/app/server.js
 Restart=always
-User=nobody
-Group=nobody
+User=uplr
+Group=uplr
 Environment=PATH=/usr/bin:/usr/local/bin
 Environment=NODE_ENV=production
-WorkingDirectory=/www/uplr/app
+WorkingDirectory=/www/uplr
 
 [Install]
 WantedBy=multi-user.target
