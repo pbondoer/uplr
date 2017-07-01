@@ -1,0 +1,26 @@
+{
+  "name": "uplr",
+  "version": "1.0.0",
+  "description": "A simple image upload server",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pbondoer/uplr.git"
+  },
+  "keywords": [
+    "uplr",
+    "upload",
+    "image",
+    "server"
+  ],
+  "author": "pbondoer",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/pbondoer/uplr/issues"
+  },
+  "homepage": "https://github.com/pbondoer/uplr"
+}
